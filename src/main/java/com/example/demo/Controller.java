@@ -21,9 +21,31 @@ public class Controller {
     }
 
     @GetMapping("/get")
-    public String get(@RequestParam(name = "name", required = true) Integer param, Model model) {
+    public String get1(@RequestParam(name = "name", required = true) Integer param, Model model) {
         model.addAttribute("name", list.get(param));
         return "greeting";
     }
+
+    @GetMapping("/get2")
+    public String get2(@RequestParam(name = "name", required = true) Integer param, Model model) {
+        model.addAttribute("name", list.get(param));
+        return "greeting";
+    }
+
+    @GetMapping("/get3")
+    public String get3(@RequestParam(name = "name", required = true) Integer param, Model model) {
+        model.addAttribute("name", list.get(param));
+        return "greeting";
+    }
+
+
+    @GetMapping("/get4")
+    public String get4(@RequestParam(name = "name", required = true) Integer param, Model model) {
+        model.addAttribute("name", list.get(param));
+        return "greeting";
+    }
+
+
+
 
 }
